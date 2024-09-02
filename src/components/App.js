@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const App = () => {
 
-  const relatives =["chandan","pawan","sandeep","miku","ansh"];
+  
+
+  const [relatives] = useState(["chandan","pawan","sandeep","miku","ansh"]);
 
   return (
     <div id="main">
