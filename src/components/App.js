@@ -9,9 +9,9 @@ const App = () => {
                {/* Do not remove the main div */}
               
 
-             <ol key="relativeList">
+             <ol key="relativeList" id='realativeList'>
               {relatives.map((item,index) =>
-                  <li key={`relativeListItem${index + 1}`}>{item}</li>
+                  <li key={`relativeListItem${index + 1}`}  id={'relativeListItem'+(index+1)}>{item}</li>
               )}
              
              </ol>
@@ -20,3 +20,21 @@ const App = () => {
 }
 
 export default App
+
+
+// import React, { useState } from 'react'
+
+// const App = () => {
+//   const[arr] = useState(["Satish", "Ankita", "Amit", "Chetan", "Vijay", "Rahul"]);
+//   return (
+//     <div id="main">
+//                <ol key="relativeList" id='relativeList'>
+//                 {
+//                   arr.map((item, index) => <li key={'relativeListItem'+(index+1)} id={'relativeListItem'+(index+1)}>{item}</li>)
+//                 }
+//                </ol>
+//     </div>
+//   )
+// }
+
+// export default App
